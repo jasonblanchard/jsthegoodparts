@@ -27,33 +27,13 @@ function submitNode(title, body) {
 function getNodes() {
   $.ajax({
     type:'GET',
-    url: 'http://144.118.69.149/drupaltesting/test/node.json',
+    url: 'http://144.118.69.149/drupaltesting/test/views/articles',
     success: function(data) { insertNodes(data) },
     dataType: 'json',
   });
 }
 
 getNodes();
-
-function getNodeContent(nid) {
-  $.ajax({
-    type: 'GET',
-    url: 'http://144.118.69.149/drupaltesting/test/node/' + nid + ".json",
-    success: function(data) { parseNodeContent(data); },
-    dataType: 'json',
-  });
-};
-
-var nodeContents = [];
-
-function parseNodeContent(data) {
-  var nodeId = data.nid;
-  if (data.body.und) {
-    var nodeBody = data.body.und[0].value;
-  }
-  nodeContents[nodeId] = nodeBody;
-}
-
 
 function insertNodes(data) {
   $('.drupal-nodes').text('');
