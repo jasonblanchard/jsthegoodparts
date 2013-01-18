@@ -6,7 +6,7 @@
   <script src="ajax.js"></script>
 </head>
 <body>
-<h1>JavaScript Testing</h1>
+<h1><a href="">JavaScript Testing</a></h1>
 
 <?php
   if (isset($_POST['title']) && isset($_POST['body'])) { ?>
@@ -23,7 +23,7 @@
 ?>
 
 
-<form id="node-submit" action="#" method="post">
+<form id="node-submit" action="" method="post">
   Title: <input type="text" name="title"></input>
   <br />
   Body: 
