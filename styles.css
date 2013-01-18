@@ -1,0 +1,12 @@
+.left-sidebar {
+  background: grey;
+  width: 160px;
+  padding: 3px;
+  position: absolute;
+  margin-top: 100px;
+}
+
+
+.button {
+  margin-left: 120px;
+}
