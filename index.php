@@ -34,7 +34,7 @@
 </form>
 
   <!-- <script src="objects.js"></script> -->
-  <script src="jquerytest.js"></script>
+  <!-- <script src="jquerytest.js"></script>
 
   <div class="left-sidebar">
     <h3>This is a sidebar</h3>
@@ -51,6 +51,10 @@
   <div>
     <br />
     <script src="regex.js"></script>
+  </div> -->
+
+  <div class="drupal-nodes">
+  Waiting for nodes...
   </div>
 
 
