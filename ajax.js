@@ -36,10 +36,14 @@ function getNodes() {
 getNodes();
 
 function insertNodes(data) {
+  console.log(data);
   $('.drupal-nodes').text('');
   $(document).ready( function() {
     for (var key in data) {
-      $('.drupal-nodes').append("<div>" + data[key].title + "</div>");
+      $('.drupal-nodes').append("<div><h3>" + data[key].title + "</h3></div>");
+      if (data[key].body.und[0]) {
+        $('.drupal-nodes').append("<div>" + data[key].body.und[0].value + "</div>");
+        }
     };
   });
 }
